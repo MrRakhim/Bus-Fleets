@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddTripActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20sp"
+        android:orientation="vertical"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/departure_insert"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:hint="Departure"
+
+                android:layout_marginBottom="10sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/arrival_insert"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:hint="Arrival"
+                android:layout_marginBottom="10sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10sp"
+            >
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="120sp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="130sp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/departure_date_insert"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content"
+                    android:hint="Departure date"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="120sp"
+                android:layout_height="match_parent"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/departure_time_insert"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content"
+                    android:hint="Departure time"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="120sp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="130sp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/arrival_date_insert"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content"
+                    android:hint="Arrival date"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="120sp"
+                android:layout_height="match_parent"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/arrival_time_insert"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content"
+                    android:hint="Arrival time"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bus details"
+            android:layout_marginVertical="15sp"
+            android:textSize="18sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="100sp"
+                android:layout_height="match_parent"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/car_mark_insert"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content"
+                    android:hint="Car mark"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="100sp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="35sp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/car_number_insert"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content"
+                    android:hint="Car number"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="100sp"
+                android:layout_height="match_parent"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/car_seat_insert"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content"
+                    android:hint="Car seat"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/insert_save_button"
+            android:layout_width="match_parent"
+            android:layout_marginTop="100sp"
+            android:layout_height="50sp"
+            android:text="Save"
+            android:layout_gravity="bottom"
+            android:textColor="@color/white"
+            android:background="@drawable/add_button"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
